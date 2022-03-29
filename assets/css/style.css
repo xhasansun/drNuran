@@ -198,6 +198,26 @@ aside ul li a:hover {
   height: 400px;
 }
 
+.section-one .about-wrapper .see-more {
+  padding-top: 30px;
+}
+
+.section-one .about-wrapper .see-more a {
+  background-color: #1695CA;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .order {
+    order: 1;
+  }
+  .section-one .about-wrapper {
+    padding-bottom: 45px;
+  }
+}
+
 .section-two aside h5 {
   background-color: #1695CA;
   padding: 10px;

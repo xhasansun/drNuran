@@ -40,5 +40,28 @@
         .text{
             
         }
+
+        .see-more{
+            padding-top: 30px;
+            a{
+                background-color: #1695CA;
+                color: white;
+                padding: 7px;
+                border-radius: 4px;
+            }
+        }
     }
 }
+
+@media (max-width: 992px) { 
+    .order{
+        order: 1;
+    }
+
+    .section-one{
+        .about-wrapper{
+            padding-bottom: 45px;
+        }
+    }
+
+ }

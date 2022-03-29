@@ -1,40 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-section{
+section {
     margin-bottom: 25px;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-h5{
+h5 {
     font-size: 24px;
 }
 
-h6{
+h6 {
     font-size: 20px;
 }
 
-aside{
-    ul{
-        li{
-            a{
+aside {
+    ul {
+        li {
+            a {
                 color: black;
-                &:hover{
+                &:hover {
                     color: purple;
                 }
             }
