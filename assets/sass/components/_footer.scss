@@ -2,12 +2,23 @@ footer{
     background-color: #F7F7F7;
     .logo{
         img{
-            width: 100%;
+            width: 75%;
         }
+        padding-bottom: 20px;
     }
 
     .contact{
 
+    }
+
+    .social{
+        ul{
+            display: flex;
+            padding-left: 0px;
+            li{
+                padding-right: 25px;
+            }
+        }
     }
 
     .sitemap{
@@ -26,3 +37,17 @@ footer{
         width: 100%;
     }
 }
+
+@media (max-width: 768px) { 
+    footer{
+        .social{
+            li{
+                a{
+                    i{
+                        font-size: 35px !important;
+                    }
+                }
+            }
+        }
+    }
+ }

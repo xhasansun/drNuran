@@ -22,6 +22,18 @@ section {
   margin-bottom: 25px;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
 aside ul li a {
   color: black;
 }
@@ -148,7 +160,7 @@ aside ul li a:hover {
 }
 
 .section-one aside h5 {
-  background-color: purple;
+  background-color: #1695CA;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -187,7 +199,7 @@ aside ul li a:hover {
 }
 
 .section-two aside h5 {
-  background-color: purple;
+  background-color: #1695CA;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -212,7 +224,7 @@ aside ul li a:hover {
   margin-right: auto;
   color: white;
   text-align: center;
-  background-color: purple;
+  background-color: #1695CA;
   padding: 5px;
   border-radius: 5px;
 }
@@ -223,7 +235,7 @@ aside ul li a:hover {
   width: 200px;
   color: white;
   text-align: center;
-  background-color: purple;
+  background-color: #1695CA;
   padding: 5px;
   border-radius: 5px;
   font-size: 20px;
@@ -241,7 +253,7 @@ aside ul li a:hover {
 }
 
 .section-three aside h5 {
-  background-color: purple;
+  background-color: #1695CA;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -261,8 +273,35 @@ aside ul li a:hover {
   color: black;
 }
 
+.section-three .text-wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.section-three .text-wrapper .image {
+  padding-right: 25px;
+  width: 100%;
+  height: 100%;
+}
+
 .section-three .text-wrapper .image img {
-  width: 350px;
+  height: 100%;
+  width: 100%;
+}
+
+.section-three .text-wrapper .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.section-three .text-wrapper .content a {
+  background-color: #1695CA;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 .section-three h1 {
@@ -270,7 +309,7 @@ aside ul li a:hover {
   margin-right: auto;
   color: white;
   text-align: center;
-  background-color: purple;
+  background-color: #1695CA;
   padding: 5px;
   border-radius: 5px;
 }
@@ -281,20 +320,30 @@ aside ul li a:hover {
   width: 200px;
   color: white;
   text-align: center;
-  background-color: purple;
+  background-color: #1695CA;
   padding: 5px;
   border-radius: 5px;
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .text-wrapper .image {
+    width: 100%;
+    padding-right: 0px !important;
+  }
 }
 
 @media (max-width: 992px) {
   .text-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   .text-wrapper .text {
     text-align: center;
+  }
+  .image img {
+    padding-bottom: 15px;
   }
 }
 
@@ -323,7 +372,7 @@ aside ul li a:hover {
 
 .voice-disorders .post-wrapper .content-wrapper .btn {
   max-width: 150px;
-  background-color: purple !important;
+  background-color: #1695CA !important;
   color: white;
 }
 
@@ -389,11 +438,11 @@ aside ul li a:hover {
 }
 
 .list-two .list-two-wrapper .list-content h3 {
-  color: purple;
+  color: #1695CA;
 }
 
 .list-two .list-two-wrapper .list-content .btn {
-  background-color: purple;
+  background-color: #1695CA;
   color: white;
 }
 
@@ -437,7 +486,7 @@ aside ul li a:hover {
 
 .contact-header {
   min-height: 30px;
-  background-color: purple;
+  background-color: #1695ca;
   color: white;
 }
 
@@ -466,6 +515,10 @@ aside ul li a:hover {
   position: relative;
 }
 
+.navbar .container .navbar-brand img {
+  width: 80%;
+}
+
 .navbar .container .navbar-toggler {
   max-height: 15px;
   max-width: 15px;
@@ -485,7 +538,7 @@ aside ul li a:hover {
 
 .navbar .container .social-search-area {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: end;
 }
 
@@ -507,15 +560,13 @@ aside ul li a:hover {
 
 .navbar .container .social-search-area .social ul li a i {
   color: black;
+  font-size: 25px;
 }
 
 .navbar .container .social-search-area .search {
   padding-right: 10px;
-}
-
-.navbar .container .social-search-area .search .s-button {
-  line-height: 0px !important;
-  padding: 7px !important;
+  font-size: 25px;
+  display: flex;
 }
 
 .navbar .container .social-search-area .search form {
@@ -534,6 +585,38 @@ aside ul li a:hover {
   box-shadow: none;
 }
 
+.navbar .container .social-search-area .search .search-area {
+  border: 3px solid #1695ca;
+  border-radius: 5px;
+  background-color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .container .social-search-area .search .search-area i {
+  color: #1695ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.navbar .container .social-search-area .search .search-area input {
+  width: 170px;
+  height: 20px;
+  border: none;
+  padding: 7px;
+  font-size: 20px;
+  transition: .5s ease;
+}
+
+.navbar .container .social-search-area .search .search-area input:focus {
+  outline: none;
+  border: none;
+}
+
 .navbar .container .navbar-nav li a {
   color: black !important;
 }
@@ -547,8 +630,8 @@ aside ul li a:hover {
     padding-left: 0;
     line-height: 15px;
   }
-  .search form input {
-    width: 90px !important;
+  .navbar-toggler {
+    padding-top: 7px;
   }
   .social li {
     padding: 0px 6px !important;
@@ -559,7 +642,7 @@ aside ul li a:hover {
     justify-content: center;
     align-items: center;
     padding-top: 3px;
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
@@ -570,8 +653,23 @@ aside ul li a:hover {
     padding-left: 30px;
     line-height: 0px;
   }
-  .search {
-    margin-right: 30px;
+  .social-search-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+  .search .search-area input {
+    width: 0px !important;
+  }
+  .search .search-area:hover input, .search .search-area:focus input {
+    width: 145px !important;
+    transition: .5s ease;
+  }
+  .navbar-brand {
+    margin-right: 0px !important;
+  }
+  .navbar-brand img {
+    width: 100% !important;
   }
 }
 
@@ -592,8 +690,21 @@ footer {
   background-color: #F7F7F7;
 }
 
+footer .logo {
+  padding-bottom: 20px;
+}
+
 footer .logo img {
-  width: 100%;
+  width: 75%;
+}
+
+footer .social ul {
+  display: flex;
+  padding-left: 0px;
+}
+
+footer .social ul li {
+  padding-right: 25px;
 }
 
 footer .sitemap ul {
@@ -607,6 +718,12 @@ footer .sitemap ul li a {
 footer iframe {
   height: 300px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  footer .social li a i {
+    font-size: 35px !important;
+  }
 }
 
 /* Font */

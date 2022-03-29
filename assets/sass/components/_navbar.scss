@@ -1,6 +1,6 @@
 .contact-header {
     min-height: 30px;
-    background-color: purple;
+    background-color: #1695ca;
     color: white;
     .banner {
         display: flex;
@@ -24,6 +24,9 @@
     .container {
         position: relative;
         .navbar-brand {
+            img {
+                width: 80%;
+            }
         }
 
         .navbar-toggler {
@@ -34,7 +37,6 @@
             right: 25px;
             outline: none;
             padding-bottom: 35px;
-
         }
         .navbar-toggler:focus,
         .navbar-toggler:active,
@@ -45,8 +47,9 @@
 
         .social-search-area {
             display: flex;
-            flex-direction: row;
+            align-items: center;
             justify-content: end;
+
             .social {
                 padding-right: 10px;
                 ul {
@@ -56,10 +59,11 @@
                     list-style: none;
                     li {
                         list-style: none;
-                        padding:0px 10px;
+                        padding: 0px 10px;
                         a {
-                            i{
+                            i {
                                 color: black;
+                                font-size: 25px;
                             }
                         }
                     }
@@ -68,10 +72,10 @@
 
             .search {
                 padding-right: 10px;
-                .s-button{
-                    line-height: 0px !important;
-                    padding: 7px !important;
-                }
+                font-size: 25px;
+                display: flex;
+
+
                 form {
                     height: 30px;
                     display: flex;
@@ -86,21 +90,53 @@
                         box-shadow: none;
                     }
                 }
+
+                .search-area {
+                    border: 3px solid #1695ca;
+                    border-radius: 5px;
+                    background-color: white;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    i{
+                        color: #1695ca;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 10px;
+                        font-size: 20px;
+                    }
+                    input{
+                        width: 170px;
+                        height: 20px;
+                        border: none;
+                        padding: 7px;
+                        font-size: 20px;
+                        transition: .5s ease;
+                        &:focus{
+                            outline: none;
+                            border: none;
+                            
+                        }
+                    }
+
+
+                }
             }
-
         }
-        
-        .navbar-nav{
 
-            li{
-
-                a{
+        .navbar-nav {
+            li {
+                a {
                     color: black !important;
                 }
             }
         }
     }
 }
+
+
+
 
 @media (max-width: 768px) {
     .banner {
@@ -112,34 +148,33 @@
         }
     }
 
-    .search{
-        form{
-            input{
-                width: 90px !important;
-            }
-        }
+    .navbar-toggler {
+        padding-top: 7px;
     }
 
-    .social{
-        li{
+
+    .social {
+        li {
             padding: 0px 6px !important;
             padding-top: 5px !important;
-            a{
-                i{
+            a {
+                i {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding-top: 3px;
-                    font-size: 20px;
+                    font-size: 20px !important;
                 }
             }
         }
-
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
+}
+
+@media (max-width: 992px) {
     .banner-right {
         display: flex;
         flex-direction: column;
@@ -147,8 +182,33 @@
         line-height: 0px;
     }
 
-    .search{
-        margin-right: 30px;
+    .social-search-area {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start !important;
+    }
+    .search {
+       
+        .search-area{
+
+            input{
+                width: 0px !important;
+            }
+            &:hover, &:focus{
+                input{
+                    width: 145px !important;
+                    transition: .5s ease;
+                }
+
+            }
+        }
+    }
+
+    .navbar-brand {
+        margin-right: 0px !important;
+        img {
+            width: 100% !important;
+        }
     }
 }
 

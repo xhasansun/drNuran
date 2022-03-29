@@ -43,9 +43,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-md-12">
             <a class="navbar-brand" href="#">
-              <img style="width: 100%;" src="./assets/img/logo.jpeg" alt="">
+              <img src="./assets/img/logo.jpeg" alt="">
             </a>
           </div>
           <div class="col-6">
@@ -59,46 +59,27 @@
                   <ul class="social-ul">
                     <li class="social-li">
                       <a href="#">
-                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <i style="color: #3b5998;" class="fa-brands fa-facebook fa-2x"></i>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a href="#">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
+                        <i style="color:#DD2A7B ;" class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                      <a href="#">
+                        <i style="color: #08a0e9;" class="fa-brands fa-twitter fa-2x"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>
 
                 <div class="search">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn btn-outline-dark s-button" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                  <div class="search-area">
+                    <input type="text" placeholder="ne aramıştınız?">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Search</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form class="d-flex">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-dark" type="submit">ARA</i></button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-
                 </div>
               </div>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -385,15 +366,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error eum nihil. Corrupti, iure fuga
               accusamus possimus ab sed iusto in suscipit minus necessitatibus cum adipisci, hic perspiciatis optio
               soluta atque corporis quo consequatur, nam repellat! Explicabo, aut inventore adipisci ullam vel officiis,
-              quaerat nesciunt impedit porro modi beatae repudiandae tempore ad quo blanditiis. <br> <br>
-              Non officiis dignissimos
-              esse assumenda atque voluptates explicabo numquam tempora nesciunt? Eum veniam ipsam reprehenderit,
-              architecto eligendi impedit laborum fuga distinctio officia qui harum unde quas cumque dicta aut modi vel
-              repellendus provident, quidem quod maiores quam voluptatem dolores totam. Quisquam vitae odit iste
-              expedita repellat voluptate accusamus veniam dolorum reiciendis, rem incidunt praesentium inventore qui
-              asperiores ea ipsa saepe magni maiores consectetur pariatur nostrum. Aspernatur quos iure pariatur aperiam
-              excepturi et atque deserunt laborum, deleniti quis amet, eveniet, voluptatibus ipsa odit placeat sequi
-              vero consequuntur in cumque quidem?
+              quaerat nesciunt impedit porro modi beatae repudiandae tempore ad quo blanditiis.
             </div>
           </div>
         </div>
@@ -533,6 +506,34 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="video-wrapper">
+                <div class="video">
+                  <iframe src="https://www.youtube.com/embed/Wmluhkuzut0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text">
+                  <h5>video baslıgı</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="video-wrapper">
+                <div class="video">
+                  <iframe src="https://www.youtube.com/embed/Wmluhkuzut0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text">
+                  <h5>video baslıgı</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate!</p>
+                </div>
+              </div>
+            </div>
           </div>
           <a href="#">
             <h2 class="text-center mt-5">Tümünü Görüntüle</h2>
@@ -639,48 +640,55 @@
 
         <div class="col-lg-9 col-sm-12">
           <h1 class="text-center mb-5">YAZILAR</h1>
-          <div class="row justify-content-around">
-            <div class="col-lg-5 col-md-12">
-              <div class="text-wrapper">
+          <div class="row">
+            <div class="text-wrapper">
+              <div class="col-lg-3 col-md-12 col-sm-12">
                 <div class="image">
-                  <img src="./assets/img/logo.jpeg" alt="">
+                  <img src="./assets/img/ddd.png" alt="">
                 </div>
-                <div class="text">
-                  <h5>ANA Nedir ?</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate!</p>
+              </div>
+              <div class="col-lg-9 col-md-12">
+                <div class="content">
+                  <h6>ANA Nedir ?</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga tenetur eum temporibus
+                    accusantium tempore animi eius ad laudantium eos!
+                  </p>
+                  <a href="#">Görüntüle</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-md-12">
-              <div class="text-wrapper">
+            <div class="text-wrapper">
+              <div class="col-lg-3 col-md-12 col-sm-12">
                 <div class="image">
-                  <img src="./assets/img/logo.jpeg" alt="">
+                  <img src="./assets/img/ddd.png" alt="">
                 </div>
-                <div class="text">
-                  <h5>ANCA Nedir ?</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate!</p>
+              </div>
+              <div class="col-lg-9 col-md-12">
+                <div class="content">
+                  <h6>ANA Nedir ?</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga tenetur eum temporibus
+                    accusantium tempore animi eius ad laudantium eos!
+                  </p>
+                  <a href="#">Görüntüle</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-md-12">
-              <div class="text-wrapper">
+            <div class="text-wrapper">
+              <div class="col-lg-3 col-md-12 col-sm-12">
                 <div class="image">
-                  <img src="./assets/img/logo.jpeg" alt="">
-                </div>
-                <div class="text">
-                  <h5>RF Nedir ?</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate!</p>
+                  <img src="./assets/img/ddd.png" alt="">
                 </div>
               </div>
-            </div>
-            <div class="col-lg-5 col-md-12">
-              <div class="text-wrapper">
-                <div class="image">
-                  <img src="./assets/img/logo.jpeg" alt="">
-                </div>
-                <div class="text">
-                  <h5>CRP Nedir ?</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate!</p>
+              <div class="col-lg-9 col-md-12">
+                <div class="content">
+                  <h6>ANA Nedir ?</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga tenetur eum temporibus
+                    accusantium tempore animi eius ad laudantium eos!
+                  </p>
+                  <a href="#">Görüntüle</a>
                 </div>
               </div>
             </div>
@@ -711,6 +719,25 @@
               <i class="fa-solid fa-phone me-2"></i>
               TELEFON: 0538 851 4843
             </p>
+          </div>
+          <div class="social">
+            <ul class="social-ul">
+              <li class="social-li">
+                <a href="#">
+                  <i style="color: #3b5998;" class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i style="color:#DD2A7B ;" class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i style="color: #08a0e9;" class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="col-lg-2">
@@ -745,7 +772,9 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12502.65291160146!2d27.139744!3d38.426147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57c840b0f8251c29!2sR%C3%BCzgar%20Dijital%20Reklam%20Ajans%C4%B1!5e0!3m2!1str!2str!4v1648497185874!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12502.65291160146!2d27.139744!3d38.426147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57c840b0f8251c29!2sR%C3%BCzgar%20Dijital%20Reklam%20Ajans%C4%B1!5e0!3m2!1str!2str!4v1648497185874!5m2!1str!2str"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
