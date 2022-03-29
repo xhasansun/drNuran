@@ -536,6 +536,18 @@ aside ul li a:hover {
   box-shadow: none;
 }
 
+.navbar .container .social-ul-menu {
+  display: none;
+}
+
+.navbar .container .phone-menu {
+  display: none;
+}
+
+.navbar .container .phone-menu a {
+  color: black;
+}
+
 .navbar .container .social-search-area {
   display: flex;
   align-items: center;
@@ -652,6 +664,25 @@ aside ul li a:hover {
     flex-direction: column;
     padding-left: 30px;
     line-height: 0px;
+  }
+  .social-ul-menu {
+    display: flex !important;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .social-ul-menu li {
+    padding-right: 15px;
+  }
+  .phone-menu {
+    display: flex !important;
+  }
+  .phone-menu a {
+    font-size: 20px;
+    transition: .6s ease;
+  }
+  .phone-menu a:hover {
+    color: red !important;
+    transition: .3s ease;
   }
   .social-search-area {
     display: flex;

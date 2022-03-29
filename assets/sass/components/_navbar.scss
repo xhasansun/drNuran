@@ -44,7 +44,15 @@
             outline: none;
             box-shadow: none;
         }
-
+        .social-ul-menu{
+            display: none;
+        }
+        .phone-menu{
+            display: none;
+            a{
+                color: black;
+            }
+        }
         .social-search-area {
             display: flex;
             align-items: center;
@@ -180,6 +188,27 @@
         flex-direction: column;
         padding-left: 30px;
         line-height: 0px;
+    }
+
+    .social-ul-menu{
+        display: flex !important;
+        padding-left: 0px;
+        padding-top: 30px;
+        li{
+            padding-right: 15px;
+        }
+    }
+
+    .phone-menu{
+        display: flex !important;
+        a{
+            font-size: 20px;
+            transition: .6s ease;
+            &:hover{
+                color: red !important;
+                transition: .3s ease;
+            }
+        }
     }
 
     .social-search-area {
