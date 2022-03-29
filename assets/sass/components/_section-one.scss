@@ -1,0 +1,44 @@
+.section-one{
+
+    aside{
+        h5{
+            background-color: purple;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+        ul{
+            padding: 0;
+            line-height: 25px;
+            li{
+                padding: 3px 0px;
+                border-bottom: 1px solid rgb(160, 151, 151);
+                a{
+                    i{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            padding-bottom: 20px;
+        }
+        .image{
+            
+            img{
+                height: 400px;
+            }
+            padding-bottom: 30px;
+        }
+
+        .text{
+            
+        }
+    }
+}

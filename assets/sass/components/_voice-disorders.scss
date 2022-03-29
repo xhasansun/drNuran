@@ -1,0 +1,72 @@
+.voice-disorders{
+
+    .post-wrapper{
+        margin-bottom: 25px;
+        .blog-image-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-right: 25px;
+            img{
+                width: 100%;
+            }
+        }
+    
+        .content-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+            .btn{
+                max-width: 150px;
+                background-color: purple !important;
+                color: white;
+            }
+        }
+    }
+
+    .next-page{
+        display: flex;
+        .box{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #DDDDDD;
+            transition: .5s ease;
+            span{
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            &:hover{
+                background-color: black;
+                cursor: pointer;
+                transition: .5s ease;
+                span{
+                    color: white;
+                }
+            }
+
+            &:active{
+                background-color: black;
+                cursor: pointer;
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) { 
+    .post-wrapper{
+        display: flex;
+        flex-direction: column;
+        .blog-image-wrapper{
+            padding-right: 0px !important;
+        }
+    }
+ }

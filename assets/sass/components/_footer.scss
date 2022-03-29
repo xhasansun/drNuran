@@ -1,0 +1,28 @@
+footer{
+    background-color: #F7F7F7;
+    .logo{
+        img{
+            width: 100%;
+        }
+    }
+
+    .contact{
+
+    }
+
+    .sitemap{
+        ul{
+            padding: 0;
+            li{
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+
+    iframe{
+        height: 300px;
+        width: 100%;
+    }
+}

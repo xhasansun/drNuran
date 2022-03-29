@@ -1,0 +1,70 @@
+.section-three {
+    aside {
+        h5 {
+            background-color: purple;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+        ul {
+            padding: 0;
+            line-height: 25px;
+            li {
+                padding: 3px 0px;
+                border-bottom: 1px solid rgb(160, 151, 151);
+                a {
+                    i {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .text-wrapper{
+
+        .image{
+            
+            img{
+                width: 350px;
+            }
+        }
+
+        .text{
+
+        }
+    }
+
+    h1{
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        text-align: center;
+        background-color: purple;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    h2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        color: white;
+        text-align: center;
+        background-color: purple;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text {
+            text-align: center;
+        }
+    }
+}
