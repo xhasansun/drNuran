@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********** Colors **********/
 /********** Font **********/
 /********** Font Size **********/
@@ -269,6 +270,54 @@ aside ul li a:hover {
   }
   .video-wrapper .text {
     text-align: center;
+  }
+}
+
+/* section three */
+.articles .text-wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.articles .text-wrapper .image {
+  padding-right: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.articles .text-wrapper .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.articles .text-wrapper .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.articles .text-wrapper .content a {
+  background-color: #1695CA;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/* MOBİLE ORDER - SECTİON TWO */
+@media (max-width: 992px) {
+  .ord-1 {
+    order: 1;
+  }
+  .ord-2 {
+    order: 2;
+  }
+  .ord-3 {
+    order: 3;
+  }
+  .ord-4 {
+    order: 4;
   }
 }
 
